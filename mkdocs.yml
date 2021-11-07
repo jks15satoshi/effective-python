@@ -17,7 +17,6 @@ theme:
   include_search_page: false
   search_index_only: true
 
-  language: zh
   features:
     - content.code.annotate
     # - content.tabs.link
@@ -40,13 +39,11 @@ theme:
       accent: purple
       toggle:
         icon: material/weather-sunny
-        name: 打开暗色模式
     - scheme: slate
       primary: purple
       accent: purple
       toggle:
         icon: material/weather-night
-        name: 打开亮色模式
   font:
     text: Inter
     code: DejaVu Sans Mono
@@ -55,8 +52,25 @@ theme:
 
 # Plugins
 plugins:
-  - search:
-      lang: ja
+  - search
+  - i18n:
+      default_language: !ENV [DEFAULT_LANGUAGE, "zh"]
+      languages:
+        zh: 简体中文
+        zh_TW: 繁體中文
+      nav_translations:
+        zh_TW:
+          首页: 首頁
+          Python 式思考: Python 式思考
+
+extra:
+  alternate:
+  - name: 简体中文
+    link: ./
+    lang: zh
+  - name: 繁體中文
+    link: ./zh_TW/
+    lang: zh_TW
 
 # Extensions
 markdown_extensions:
@@ -100,9 +114,10 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - 首页: index.md
-  - Python 式思考:
-    - 第 0 项：Python 之禅: chpt_1/item_0.md
-    # - 第 1 项：了解 Python 解释器: chpt_1/item_1.md
-    # - 第 2 项：使用虚拟环境: chpt_1/item_2.md
-    # - 第 3 项：遵循 PEP 8 风格规范: chpt_1/item_3.md
+- 首页: index.md
+- Python 式思考:
+  - chpt_1/item_0.md
+  # - chpt_1/item_1.md
+  # - chpt_1/item_2.md
+  # - chpt_1/item_3.md
+
