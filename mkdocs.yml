@@ -5,7 +5,7 @@ site_author: Satoshi Jek
 
 # Repository
 repo_name: jks15satoshi/effective-python
-repo_url: https://github.com/jks15satoshi/effective-python
+repo_url: https://github.com/jks15satoshi/effective-python/
 
 # Copyright
 copyright: Copyright &copy; 2021 Satoshi Jek. Licensed under the Creative Commons Attribution 4.0 International License.
@@ -37,11 +37,26 @@ theme:
   palette:
     - scheme: default
       primary: purple
-      accent: indigo
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: 打开暗色模式
+    - scheme: slate
+      primary: purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: 打开亮色模式
+  font:
+    text: Inter
+    code: DejaVu Sans Mono
+  icon:
+    repo: fontawesome/brands/github
 
 # Plugins
 plugins:
-  - search
+  - search:
+      lang: ja
 
 # Extensions
 markdown_extensions:
@@ -87,4 +102,7 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - Python 式思考:
-    - 了解 Python 版本: chap_1/item_1.md
+    - 第 0 项：Python 之禅: chpt_1/item_0.md
+    - 了解 Python 解释器: chpt_1/item_1.md
+    - 使用虚拟环境: chpt_1/item_2.md
+    - 遵循 PEP 8 风格规范: chpt_1/item_3.md
