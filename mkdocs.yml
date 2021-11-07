@@ -103,6 +103,6 @@ nav:
   - 首页: index.md
   - Python 式思考:
     - 第 0 项：Python 之禅: chpt_1/item_0.md
-    - 了解 Python 解释器: chpt_1/item_1.md
-    - 使用虚拟环境: chpt_1/item_2.md
-    - 遵循 PEP 8 风格规范: chpt_1/item_3.md
+    # - 第 1 项：了解 Python 解释器: chpt_1/item_1.md
+    # - 第 2 项：使用虚拟环境: chpt_1/item_2.md
+    # - 第 3 项：遵循 PEP 8 风格规范: chpt_1/item_3.md
