@@ -46,13 +46,16 @@ theme:
         icon: material/weather-night
   font:
     text: Inter
-    code: DejaVu Sans Mono
+    code: Noto Sans Mono
   icon:
     repo: fontawesome/brands/github
 
 # Plugins
 plugins:
   - search
+  - exclude:
+      glob:
+        - README/*
   - i18n:
       default_language: !ENV [DEFAULT_LANGUAGE, "zh"]
       languages:
