@@ -1,6 +1,6 @@
 # 第 0 项：Python 之禅
 
-尝试进入 Python 交互模式，输入 `import this`。不知道如何进入交互模式？打开终端输入 `python` 试试。
+在控制台界面输入 `python` 进入 Python 交互模式，并输入 `import this` 查看输出结果。
 
 !!! note "提示"
     对于部分平台，可能 `python` 命令实际指代的是 Python 2 而非 Python 3，因此你可能需要通过 `python3` 来执行命令。  
@@ -54,7 +54,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 Python 之禅包含了 19 条影响 Python 语言设计的软件编写原则，被列入于 PEP 20 中[^2]。Python 之禅以这种简短的形式概括了 Python 语言的设计原则与规范。
 
-全文的核心思想就是，要去编写逻辑清晰、易于阅读与维护的代码[^3]。
+全文的核心思想就是，要去编写逻辑清晰、易于阅读与维护的代码[^3]。后面的内容会出现许多对这些原则的体现。
 
 [^1]: 根据 Python 之禅的作者 Tim Peters [自述](https://softwareengineering.stackexchange.com/questions/148790/is-the-14th-line-of-the-zen-of-python-a-reference-to-dijkstra/148794#148794)，荷兰人指 Python 的作者 Guido van Rossum。
 [^2]: [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
