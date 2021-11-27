@@ -47,17 +47,17 @@ choice.py:10:19: E231 missing whitespace after ','
 
 不同的静态检查工具在使用上大同小异，但检查方向可能存在不同。静态检查大体上分为以下几种方向：
 
-- 逻辑检查：检查代码中存在的语法错误，或者不合理与可能导致意料之外结果的代码，如 [`bandit`](https://github.com/PyCQA/bandit/) 和 [`mypy`](https://github.com/python/mypy/)；
-- 风格检查：检查代码风格是否符合 PEP 8 规范，如 [`pycodestyle`](https://github.com/PyCQA/pycodestyle/)；
-- 类型检查：检查代码中的变量类型在执行过程中是否符合预期，如 [`pyright`](https://github.com/microsoft/pyright/)。
+- 逻辑检查：检查代码中存在的语法错误，或者不合理与可能导致意料之外结果的代码，如 [`bandit`](https://github.com/PyCQA/bandit) 和 [`mypy`](https://github.com/python/mypy)；
+- 风格检查：检查代码风格是否符合 PEP 8 规范，如 [`pycodestyle`](https://github.com/PyCQA/pycodestyle)；
+- 类型检查：检查代码中的变量类型在执行过程中是否符合预期，如 [`pyright`](https://github.com/microsoft/pyright)。
 
-部分检查工具可能能够处理多种检查方向，例如 [`Pylint`](https://pylint.org/) 和 [`Flake8`](https://github.com/PyCQA/flake8/) 都具备逻辑检查和风格检查的功能。
+部分检查工具可能能够处理多种检查方向，例如 [`Pylint`](https://pylint.org) 和 [`Flake8`](https://github.com/PyCQA/flake8) 都具备逻辑检查和风格检查的功能。
 
 由于选择很多，可以事先花上一些时间使用这些工具，再根据自己或团队的习惯选取静态检查工具。
 
 ### 自动格式化工具
 
-自动格式化工具 (formatter) 可以自动将不符合 PEP 8 规范的代码更正为符合规范的代码。目前常见的自动格式化工具有 [`autopep8`](https://github.com/hhatto/autopep8/)、[`yapf`](https://github.com/google/yapf/) 和 [`black`](https://github.com/psf/black/)。
+自动格式化工具 (formatter) 可以自动将不符合 PEP 8 规范的代码更正为符合规范的代码。目前常见的自动格式化工具有 [`autopep8`](https://github.com/hhatto/autopep8)、[`yapf`](https://github.com/google/yapf) 和 [`black`](https://github.com/psf/black)。
 
 以 `autopep8` 为例，和上面的代码检查类似，通过执行下面的命令即可对原来不符合规范的代码文件进行自动更正：
 
@@ -100,7 +100,7 @@ print(choice.action())
 
 在实际开发过程中，你其实也可以灵活地应用自己认为更加合理的规范，并不一定需要拘泥于 PEP 8 的规范。真正重要的是，无论是 PEP 8 还是自定规则，你都需要让整个项目遵循相同的规范。维持代码的可读性，这才是建立与采用代码风格规范的核心目的。
 
-除了 PEP 8 规范以外，如 Google 的 [风格规范](https://google.github.io/styleguide/pyguide.html/) 等同样值得参考。
+除了 PEP 8 规范以外，如 Google 的 [风格规范](https://google.github.io/styleguide/pyguide.html) 等同样值得参考。
 
-[^1]: `unittest` — Unit testing framework. Python.org. https://docs.python.org/3/library/unittest.html#test-cases/
-[^2]: The *black* code style — Line length. Black documentation. https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#line-length/
+[^1]: `unittest` — Unit testing framework. Python.org. https://docs.python.org/3/library/unittest.html#test-cases
+[^2]: The *black* code style — Line length. Black documentation. https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#line-length
