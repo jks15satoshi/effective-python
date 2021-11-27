@@ -57,5 +57,5 @@ Python 之禅包含了 19 条影响 Python 语言设计的软件编写原则，�
 全文的核心思想就是，要去编写逻辑清晰、易于阅读与维护的代码[^3]。后面的内容会出现许多对这些原则的体现。
 
 [^1]: 根据 Python 之禅的作者 Tim Peters [自述](https://softwareengineering.stackexchange.com/questions/148790/is-the-14th-line-of-the-zen-of-python-a-reference-to-dijkstra/148794#148794)，荷兰人指 Python 的作者 Guido van Rossum。
-[^2]: [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
+[^2]: PEP 20 -- The Zen of Python. Python.org. https://www.python.org/dev/peps/pep-0020/
 [^3]: 有意思的是，`this` 模块的 [实现](https://hg.python.org/cpython/file/3.5/Lib/this.py) 算是彻头彻尾地违反了上面的原则。
