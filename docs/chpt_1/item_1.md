@@ -22,4 +22,4 @@ Python 解释器可以使用多种语言实现。Python 使用 CPython 作为默
 
 不过如果你有一些特别的需求，例如你十分看中项目的执行效率，那么你也可以考虑 [PyPy](https://www.pypy.org/) 这样的解释器实现；或者你需要你的项目与 Java 等其他语言项目配合使用，则诸如 [Jython](https://www.jython.org/) 或 [IronPython](https://www.ironpython.net/) 等解释器实现可能会很有帮助。
 
-[^1]: Sunsetting Python 2. Python.org. [https://www.python.org/doc/sunset-python-2/](https://www.python.org/doc/sunset-python-2/)
+[^1]: Sunsetting Python 2. Python.org. https://www.python.org/doc/sunset-python-2/
