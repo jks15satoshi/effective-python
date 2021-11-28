@@ -2,9 +2,11 @@
 
 理论来讲，编写一个 Python 并不需要什么规范，只要你的项目合乎 Python 的语法规则，可以顺利执行，就没什么问题。不过正如 [Python 之禅](./item_0.md) 所表达的，项目的源码是给人看的，尤其是给其他人看的，为了源码更容易被任何人理解和维护，维持源码的美观与易读就十分重要。
 
-PEP 8 是 Python 提供的代码格式化规范，罗列了相当多项 Python 官方建议或不建议使用的代码风格，整个 Python 社区都在尽力遵循 PEP 8 所规定的诸多规范。因此在编写 Python 项目时，**强烈建议** 遵循 PEP 8 规范。
+## PEP 8 规范
 
-PEP 8 规范原文请参考 [PEP 8 文档](https://www.python.org/dev/peps/pep-0008/)。
+PEP 8 是 Python 提供的代码格式化规范，罗列了相当多项 Python 官方建议或不建议使用的代码风格。在编写 Python 项目时，**强烈建议** 遵循 PEP 8 规范。
+
+PEP 8 规范原文请参考 [PEP 8 文档](https://www.python.org/dev/peps/pep-0008/)。由于内容繁多，本文档不予赘述。
 
 ## 善用代码格式化工具
 
@@ -12,9 +14,9 @@ PEP 8 的规则比较零散琐碎，与其记住每个规则细节，在项目�
 
 ### 静态代码格式检查
 
-静态代码格式检查工具（code linter）能够检查出代码存在的不符合规范的地方。以 `pycodestyle` 为例，对下面令人血压升高的 Python 代码进行检查：
+静态代码格式检查工具（code linter）能够检查出代码存在的不符合规范的地方。以 `pycodestyle` 为例，对下面的 Python 代码进行检查（使用高亮对比较显而易见的不符规范的代码行进行标记）：
 
-``` python title="choice.py" linenums="1"
+``` python title="choice.py" linenums="1" hl_lines="2 4-5 8-10"
 import random
 
 class Choice:
@@ -87,7 +89,7 @@ print(choice.action())
 
 使用前可以综合考虑项目的实际情况与习惯，选择适合自己或团队的自动格式化工具。
 
-许多 IDE（例如 Visual Studio Code 或 PyCharm）都提供了静态检查与自动格式化工具的适配，可以通过其自定义的操作，脱离控制台，更加快捷地使用上述工具。
+许多 IDE（例如 Visual Studio Code 和 PyCharm）都提供了静态检查与自动格式化工具的适配，可以通过其自定义的操作，脱离控制台，更加快捷地使用上述工具。
 
 ## PEP 8 不是教条
 
